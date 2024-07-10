@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пароль состоит из 4 цифр"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        style="@style/TextPrimary" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/accent"
+        android:ems="10"
+        android:hint="Введите пароль"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/text_primary" />
+
+    <Button
+        android:id="@+id/buttonGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Угадать"
+        style="@style/ButtonPrimary" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGuess"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        style="@style/TextPrimary" />
+
+    <Button
+        android:id="@+id/buttonShowPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Показать пароль"
+        style="@style/ButtonAccent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonShowPassword"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        style="@style/TextPrimary" />
+
+    <Button
+        android:id="@+id/buttonNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPassword"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Новый пароль"
+        style="@style/ButtonPrimary"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textViewHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonNewPassword"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        style="@style/TextSecondary" />
+
+    <EditText
+        android:id="@+id/editLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="382dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="4"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textLengthPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="322dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="372dp"
+        android:text="Введите количество символов в пароле"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/chooseLengthButton"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="214dp"
+        android:text="Выбрать данное кол-во символов" />
+
+</RelativeLayout>

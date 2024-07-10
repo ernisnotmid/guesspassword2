@@ -1,0 +1,8 @@
+<resources>
+    <color name="background">#F5F5DC</color> <!-- Светло-бежевый -->
+    <color name="text_primary">#000000</color> <!-- Черный -->
+    <color name="text_secondary">#444444</color> <!-- Темно-серый -->
+    <color name="primary">#8B4513</color> <!-- Коричневый -->
+    <color name="accent">#CD853F</color> <!-- Светло-коричневый -->
+    <color name="button_text">#FFFFFF</color> <!-- Белый -->
+</resources>
